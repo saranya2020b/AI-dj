@@ -26,6 +26,7 @@ function draw(){
         circle(leftWristX,leftWristY,20);
         number_leftY=Number(leftWristY);
         remove_decimals=floor(number_leftY);
+        volume=remove_decimals/500;
         document.getElementById("volume").innerHTML="volume="+volume;
         song.setVolume(volume);
     }
